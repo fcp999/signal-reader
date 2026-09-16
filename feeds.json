@@ -1,0 +1,142 @@
+[
+  {
+    "name": "BBC News",
+    "url": "https://feeds.bbci.co.uk/news/rss.xml",
+    "category": "World"
+  },
+  {
+    "name": "Ars Technica",
+    "url": "https://feeds.arstechnica.com/arstechnica/index",
+    "category": "Tech & security"
+  },
+  {
+    "name": "NASA",
+    "url": "https://www.nasa.gov/feed/",
+    "category": "Science"
+  },
+  {
+    "name": "Packet Pushers",
+    "url": "https://packetpushers.net/feed/",
+    "category": "Networking"
+  },
+  {
+    "name": "Cloudflare",
+    "url": "https://blog.cloudflare.com/rss/",
+    "category": "Networking"
+  },
+  {
+    "name": "NPR US News",
+    "url": "https://feeds.npr.org/1003/rss.xml",
+    "category": "US"
+  },
+  {
+    "name": "NPR World",
+    "url": "https://feeds.npr.org/1004/rss.xml",
+    "category": "World"
+  },
+  {
+    "name": "PBS NewsHour",
+    "url": "https://www.pbs.org/newshour/feeds/rss/headlines",
+    "category": "US"
+  },
+  {
+    "name": "CBS US News",
+    "url": "https://www.cbsnews.com/latest/rss/us",
+    "category": "US"
+  },
+  {
+    "name": "BBC World",
+    "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+    "category": "World"
+  },
+  {
+    "name": "The Guardian US",
+    "url": "https://www.theguardian.com/us-news/rss",
+    "category": "US"
+  },
+  {
+    "name": "The Guardian World",
+    "url": "https://www.theguardian.com/world/rss",
+    "category": "World"
+  },
+  {
+    "name": "Al Jazeera",
+    "url": "https://www.aljazeera.com/xml/rss/all.xml",
+    "category": "World"
+  },
+  {
+    "name": "France 24",
+    "url": "https://www.france24.com/en/rss",
+    "category": "World"
+  },
+  {
+    "name": "Deutsche Welle",
+    "url": "https://rss.dw.com/rdf/rss-en-world",
+    "category": "World"
+  },
+  {
+    "name": "ABC News",
+    "category": "US",
+    "url": "https://abcnews.go.com/abcnews/usheadlines"
+  },
+  {
+    "name": "NBC News",
+    "category": "US",
+    "url": "https://feeds.nbcnews.com/nbcnews/public/news"
+  },
+  {
+    "name": "ABC Australia",
+    "category": "World",
+    "url": "https://www.abc.net.au/news/feed/51120/rss.xml"
+  },
+  {
+    "name": "WUSF",
+    "category": "Florida",
+    "url": "https://www.wusf.org/news.rss"
+  },
+  {
+    "name": "WMFE",
+    "category": "Florida",
+    "url": "https://www.wmfe.org/news.rss"
+  },
+  {
+    "name": "WFTV",
+    "category": "Florida",
+    "url": "https://www.wftv.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml"
+  },
+  {
+    "name": "ClickOrlando",
+    "category": "Florida",
+    "url": "https://www.clickorlando.com/arc/outboundfeeds/rss/category/news/local/?outputType=xml"
+  },
+  {
+    "name": "BleepingComputer",
+    "category": "Tech & security",
+    "url": "https://www.bleepingcomputer.com/feed/"
+  },
+  {
+    "name": "Krebs on Security",
+    "category": "Tech & security",
+    "url": "https://krebsonsecurity.com/feed/"
+  },
+  {
+    "name": "The Register",
+    "category": "Tech & security",
+    "url": "https://www.theregister.com/headlines.atom"
+  },
+  {
+    "name": "ScienceDaily",
+    "category": "Science",
+    "url": "https://www.sciencedaily.com/rss/all.xml"
+  },
+  {
+    "name": "Quanta",
+    "category": "Science",
+    "url": "https://www.quantamagazine.org/feed/"
+  },
+  {
+    "name": "Phys.org",
+    "category": "Science",
+    "url": "https://phys.org/rss-feed/"
+  }
+]

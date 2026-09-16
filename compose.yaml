@@ -1,0 +1,17 @@
+services:
+  reader:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "8090:8080"
+    environment:
+      DATA_DIR: /data
+      FEEDS_FILE: /app/feeds.json
+      MAX_PER_FEED: "30"
+    volumes:
+      - reader-data:/data
+      - ./feeds.json:/app/feeds.json:ro
+    security_opt:
+      - no-new-privileges:true
+volumes:
+  reader-data:
