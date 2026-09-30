@@ -25,3 +25,17 @@ main{display:block;max-width:none;min-height:65vh;padding:20px clamp(12px,3vw,40
 .source-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}.source-grid fieldset{min-width:0;border:0;padding:0;margin:0}.source-grid legend{color:var(--accent);margin-bottom:8px}.source-grid label{display:flex;align-items:center;gap:8px;padding:7px 0;font-size:14px;color:var(--ink)}input[type=checkbox]{accent-color:var(--accent)}#settings{max-width:820px}#settings h3{margin-top:28px}.empty{padding:24px;color:var(--muted)}[hidden]{display:none!important}
 @media(max-width:600px){.source-grid{grid-template-columns:1fr 1fr}.headline{padding:18px 14px}.headline h2{font-size:20px}.expanded{padding:0 14px 22px}.filters select{flex:1}}
 @media(max-width:400px){.source-grid{grid-template-columns:1fr}}
+
+
+/* One-time fake AI startup gag. Humanity survived splash screens once; apparently we're trying again. */
+.ai-splash{position:fixed;inset:0;z-index:9999;display:grid;place-items:center;padding:20px;background:rgba(5,10,16,.82);backdrop-filter:blur(7px);cursor:pointer}
+.ai-splash[hidden]{display:none!important}
+.ai-splash-card{width:min(720px,92vw);padding:34px 36px;border:1px solid #2d6880;border-radius:14px;background:linear-gradient(180deg,#0d1823,#09111a);box-shadow:0 20px 80px #000a,0 0 35px rgba(53,197,255,.12);color:#d9f4ff;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.ai-splash-kicker{font-size:clamp(24px,4vw,42px);font-weight:800;letter-spacing:.04em;text-shadow:0 0 18px rgba(103,213,255,.4)}
+.ai-splash-message{min-height:3.2em;margin:30px 0 22px;font-size:clamp(16px,2.5vw,23px);line-height:1.55;color:#b9d9e7}
+.ai-splash-message.punchline{font-size:clamp(24px,4vw,38px);font-weight:800;color:#fff}
+.ai-splash-progress{height:12px;overflow:hidden;border:1px solid #31566b;border-radius:999px;background:#08121a}
+.ai-splash-progress span{display:block;width:0;height:100%;border-radius:inherit;background:linear-gradient(90deg,#16c7ff,#8fe9ff);transition:width .35s ease}
+.ai-splash-hint{margin-top:12px;text-align:right;font:12px system-ui,sans-serif;color:#6f8995}
+@media(max-width:520px){.ai-splash-card{padding:26px 22px}}
+@media(prefers-reduced-motion:reduce){.ai-splash-progress span{transition:none}}
