@@ -1,3 +1,43 @@
+
+const AI_SPLASH_KEY='signal.ai-splash-seen-v1';
+function runAiSplash(){
+ let seen=false;
+ try{seen=localStorage.getItem(AI_SPLASH_KEY)==='1'}catch{}
+ if(seen)return;
+ const splash=$('aiSplash'),message=$('aiSplashMessage'),bar=$('aiSplashBar');
+ if(!splash||!message||!bar)return;
+ try{localStorage.setItem(AI_SPLASH_KEY,'1')}catch{}
+ const steps=[
+  ['Building datacenter...',10,520],
+  ['Gathering cooling water...',20,480],
+  ['Ordering 18,000 GPUs...',31,500],
+  ['Negotiating with the power company...',42,520],
+  ['Generating 1.21 gigawatts...',54,500],
+  ['Training on the entire internet...',66,500],
+  ['Hallucinating confidently...',76,480],
+  ['Adding the word "agentic" to everything...',84,520],
+  ['Checking for sentience...',91,600],
+  ['Sentience not found.',95,650],
+  ['Oh wait...',98,650],
+  ['This is just code. No AI.',100,900]
+ ];
+ let timer=null,index=0,closed=false;
+ const close=()=>{if(closed)return;closed=true;if(timer)clearTimeout(timer);splash.hidden=true;document.body.classList.remove('ai-splash-open')};
+ const next=()=>{
+  if(closed)return;
+  const [text,pct,delay]=steps[index];
+  message.textContent=text;bar.style.width=pct+'%';
+  message.classList.toggle('punchline',index>=steps.length-2);
+  index++;
+  if(index>=steps.length){timer=setTimeout(close,900);return}
+  timer=setTimeout(next,delay);
+ };
+ splash.hidden=false;document.body.classList.add('ai-splash-open');
+ splash.addEventListener('click',close,{once:true});
+ next();
+}
+document.addEventListener('DOMContentLoaded',runAiSplash,{once:true});
+
 const $=id=>document.getElementById(id);
 let offset=0,last=null,polling=false,serial=0,category='',catalog=[],needsReload=false;
 let excluded=new Set();
